@@ -1,0 +1,20 @@
+body {
+  background-color: #2b2e4a;
+  color: #e84545;
+}
+a:link {
+  color: #e84545;
+}
+a:visited {
+  color: green;
+}
+hr {
+  border-style: none;
+  border-top: 4px dotted gray;
+  width: auto;
+}
+
+h1,
+h3 {
+  color: red;
+}
