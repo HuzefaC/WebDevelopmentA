@@ -57,9 +57,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Contact</a
-                >
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -76,16 +74,24 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button class="btn btn-dark btn-lg" type="button">
-              <i class="fab fa-apple"></i>Download
+            <button class="btn btn-dark btn-lg download-button" type="button">
+              <i class="fab fa-apple"></i>
+              Download
             </button>
-            <button class="btn btn-outline-light btn-lg" type="button">
+            <button
+              class="btn btn-outline-light btn-lg download-button"
+              type="button"
+            >
               <i class="fab fa-google-play"></i>
               Download
             </button>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="images/iphone6.png" alt="iphone-mockup" />
+          <div class="col-lg-6 col-md-6 col-sm-12 title-image-div">
+            <img
+              class="title-image"
+              src="images/iphone6.png"
+              alt="iphone-mockup"
+            />
           </div>
         </div>
       </div>
@@ -94,14 +100,25 @@
     <!-- Features -->
 
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+            <i class="fas fa-check-square fa-4x icons"></i>
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+          </div>
+          <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+            <i class="fas fa-bullseye fa-4x icons"></i>
+            <h3>Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+          </div>
+          <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+            <i class="fas fa-heart fa-4x icons"></i>
+            <h3>Guaranteed to work.</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
