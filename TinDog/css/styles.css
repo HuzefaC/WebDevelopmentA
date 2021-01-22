@@ -58,21 +58,23 @@ p {
 }
 
 /* Title Image */
-.title-image-div {
-  padding-left: 4rem;
-}
 .title-image {
   width: 60%;
+
+  margin: auto auto -12rem 50px;
+
   transform: rotate(25deg);
-  position: absolute;
 }
 
 /* Features */
 #features {
-  padding: 7% 10%;
+  padding: 7% 15%;
+
   background-color: #fff;
+
   position: relative;
-  z-index: 1;
+
+  text-align: center;
 }
 
 .feature-box {
@@ -128,4 +130,14 @@ p {
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+@media only screen and (max-width: 1028px) {
+  .title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
