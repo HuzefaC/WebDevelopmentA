@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
-console.log("JS loaded");
-const buttonColors = ["red", "blue", "green", "yellow"];
+console.log('JS loaded');
+const buttonColors = ['red', 'blue', 'green', 'yellow'];
 let gamePattern = [];
 let userClickedPattern = [];
 let level = 0;
@@ -10,13 +10,13 @@ let gameon = false;
 // Event Handlers
 $(document).keypress((e) => {
   if (!gameon) {
-    $("[id=level-title]").text(`Level ${level}`);
+    $('[id=level-title]').text(`Level ${level}`);
     gameon = true;
     nextSequence();
   }
 });
 
-$("[type=button]").click((e) => {
+$('[type=button]').click((e) => {
   if (gameon) {
     let userChosenColor = e.target.id;
     userClickedPattern.push(userChosenColor);
@@ -35,16 +35,16 @@ function playSound(fileName) {
 }
 
 function animatePress(buttonId) {
-  $(`[id=${buttonId}]`).addClass("pressed");
+  $(`[id=${buttonId}]`).addClass('pressed');
   setTimeout(() => {
-    $(`[id=${buttonId}]`).removeClass("pressed");
+    $(`[id=${buttonId}]`).removeClass('pressed');
   }, 100);
 }
 
 function nextSequence() {
   userClickedPattern = [];
   level++;
-  $("[id=level-title]").text(`Level ${level}`);
+  $('[id=level-title]').text(`Level ${level}`);
   let randomNumber = Math.floor(Math.random() * buttonColors.length);
   let randomColor = buttonColors[randomNumber];
   gamePattern.push(randomColor);
@@ -65,11 +65,11 @@ function checkAnswer(index) {
 }
 
 function gameOver() {
-  playSound("wrong");
-  $("[id=level-title]").text(`Game Over, Press Any Key to Restart`);
-  $("body").addClass(`game-over`);
+  playSound('wrong');
+  $('[id=level-title]').text(`Game Over, Press Any Key to Restart`);
+  $('body').addClass(`game-over`);
   setTimeout(() => {
-    $(`body`).removeClass("game-over");
+    $(`body`).removeClass('game-over');
   }, 100);
   gameon = false;
   level = 0;
